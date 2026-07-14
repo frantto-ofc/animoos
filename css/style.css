@@ -1,7 +1,7 @@
 :root {
   --color-bg: #000;
   --color-surface: #FFFFFF;
-  --color-primary: #191A1E;
+  --color-primary: #FF7003;
   --color-primary-foreground: #FFFFFF;
   --color-secondary: #3A3D42;
   --color-accent: #09BF21;
@@ -10,7 +10,7 @@
   --color-accent-foreground: #191A1E;
   --color-accent-text: #0B7A1E;
   --color-success: #0B7A1E;
-  --color-foreground: #191A1E;
+  --color-foreground: #FF7003;
   --color-muted: #5B6167;
   --color-border: #D7DBDD;
   --color-dark-bg: #191A1E;
