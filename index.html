@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Animoos — Gelo tradicional e saborizado para operações que não podem parar</title>
+<meta name="description" content="A Animoos fornece gelo tradicional e saborizado para bares, restaurantes, adegas, hotéis e eventos em Campos do Jordão-SP, garantindo que sua operação nunca pare." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230F172A'/%3E%3Cpath d='M12 4v16M6 7l12 10M18 7L6 17' stroke='%232563EB' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<svg style="display:none">
+  <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" stroke-linecap="round"/></symbol>
+  <symbol id="icon-x" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round"/></symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24"><path d="M4.5 12.75l6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.25"/><path d="M12 7.5V12l3 2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5.2c0 4.8-3.2 8-7 9-3.8-1-7-4.2-7-9V6l7-3z" stroke-linejoin="round"/><path d="M9.25 12.4l1.9 1.9 3.6-4.1" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-truck" viewBox="0 0 24 24"><rect x="1.75" y="6.75" width="12.5" height="9" rx="1"/><path d="M14.25 10h3.6l2.4 2.7v3.05h-6"/><circle cx="6.25" cy="18" r="1.65"/><circle cx="16.25" cy="18" r="1.65"/></symbol>
+  <symbol id="icon-package" viewBox="0 0 24 24"><rect x="3.75" y="8" width="16.5" height="11.25" rx="1"/><path d="M3.9 8l1.6-3.25h13l1.6 3.25M9.75 12.5h4.5"/></symbol>
+  <symbol id="icon-chat" viewBox="0 0 24 24"><path d="M4 5.75A1.75 1.75 0 015.75 4h12.5A1.75 1.75 0 0120 5.75v8.5A1.75 1.75 0 0118.25 16H9l-4 3.5V5.75z" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-snowflake" viewBox="0 0 24 24"><path d="M12 3v18M4.5 7.5l15 9M19.5 7.5l-15 9" stroke-linecap="round"/><path d="M12 3l-1.8 1.8M12 3l1.8 1.8M12 21l-1.8-1.8M12 21l1.8-1.8M4.5 7.5l2.4.6M4.5 7.5l.6-2.4M19.5 7.5l-2.4.6M19.5 7.5l-.6-2.4M19.5 16.5l-2.4-.6M19.5 16.5l-.6 2.4M4.5 16.5l2.4-.6M4.5 16.5l.6 2.4" stroke-linecap="round"/></symbol>
+  <symbol id="icon-chart" viewBox="0 0 24 24"><path d="M4 20V10M11 20V4M18 20v-7" stroke-linecap="round"/><path d="M3 20h18" stroke-linecap="round"/></symbol>
+  <symbol id="icon-scale" viewBox="0 0 24 24"><path d="M4.5 20.25V9.75l4.75-2.5 4.75 2.5v10.5M14 20.25v-7l4.5-2.25 1.5.75v8.5" stroke-linejoin="round"/><path d="M3 20.25h18M6.75 11.25h4.5" stroke-linecap="round"/></symbol>
+  <symbol id="icon-map-pin" viewBox="0 0 24 24"><path d="M12 21s7-7.4 7-12.1A7 7 0 105 8.9C5 13.6 12 21 12 21z" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.25"/></symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M4.5 4.5h3l1.5 4-2 1.5a12 12 0 006 6l1.5-2 4 1.5v3a1.5 1.5 0 01-1.6 1.5A15.5 15.5 0 013 6.1 1.5 1.5 0 014.5 4.5z" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5.25" width="18" height="13.5" rx="1.5"/><path d="M3.5 6.5L12 13l8.5-6.5"/></symbol>
+  <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2.25A9.75 9.75 0 003.4 16.9L2 21.75l4.98-1.3A9.75 9.75 0 1012 2.25zm5.72 13.86c-.24.68-1.38 1.3-1.9 1.36-.5.06-1.03.13-1.66-.1-.38-.14-.87-.3-1.5-.58-2.63-1.14-4.35-3.82-4.48-4-.13-.18-1.06-1.4-1.06-2.68 0-1.27.66-1.9.9-2.16.23-.26.5-.32.68-.32h.5c.16 0 .38-.03.58.45.24.56.8 1.94.87 2.08.07.14.11.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.72 1.2 1.55 1.95 1.07.97 1.97 1.27 2.25 1.41.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.28.38-.23.63-.14.26.1 1.63.77 1.91.91.28.14.47.21.53.33.07.13.07.72-.17 1.4z"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="container">
+    <a href="#top" class="brand">
+      <span class="brand-mark"><svg class="icon" style="stroke:#fff"><use href="#icon-snowflake"/></svg></span>
+      ANIMOOS
+    </a>
+    <nav class="nav-links">
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#solucoes">Soluções</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#contato" class="btn btn-primary header-cta">Solicitar orçamento</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg class="icon" id="navToggleIcon"><use href="#icon-menu"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="container">
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#solucoes">Soluções</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a href="#contato" class="btn btn-primary">Solicitar orçamento</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow">Parceira operacional em Campos do Jordão-SP</span>
+        <h1>A operação do seu negócio não pode parar por falta de gelo. Com a Animoos, ela não para.</h1>
+        <p class="lede">Fornecemos gelo tradicional e saborizado para bares, restaurantes, adegas, hotéis e eventos — com a previsibilidade e a agilidade de quem entende que cada pedido sustenta uma operação em funcionamento.</p>
+        <div class="hero-actions">
+          <a href="#contato" class="btn btn-primary">Solicitar orçamento</a>
+          <a href="https://wa.me/5512999999999?text=Ol%C3%A1%2C%20quero%20falar%20com%20a%20Animoos%20sobre%20fornecimento%20de%20gelo."
+             target="_blank" rel="noopener" class="btn btn-outline">
+            <svg class="icon" style="width:18px;height:18px"><use href="#icon-whatsapp"/></svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+        <div class="trust-strip">
+          <div class="trust-item">
+            <svg class="icon"><use href="#icon-check"/></svg>
+            <span>+2.000 vendas registradas em um único mês</span>
+          </div>
+          <div class="trust-item">
+            <svg class="icon"><use href="#icon-check"/></svg>
+            <span>Referência em gelo saborizado em Campos do Jordão</span>
+          </div>
+          <div class="trust-item">
+            <svg class="icon"><use href="#icon-check"/></svg>
+            <span>Estoque preparado para demandas urgentes</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <svg class="hero-visual-snowflake"><use href="#icon-snowflake"/></svg>
+        <div>
+          <div class="hero-visual-card">
+            <div class="label">Vendas em um único mês</div>
+            <div class="value" data-count="2000" data-suffix="+">0</div>
+          </div>
+          <div class="hero-visual-card">
+            <div class="label">Presença de mercado</div>
+            <div class="value" style="font-size:1.15rem">Campos do Jordão-SP</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="problema">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">O risco que poucos calculam</span>
+        <h2>Faltar gelo não é um detalhe operacional. É a operação parando.</h2>
+        <p>Em bares, restaurantes, adegas e eventos, um estoque insuficiente vira atendimento interrompido, clientes insatisfeitos e vendas perdidas — quase sempre no momento de maior movimento.</p>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card reveal">
+          <div class="icon-wrap"><svg class="icon"><use href="#icon-clock"/></svg></div>
+          <h3>Atendimento interrompido</h3>
+          <p>O bar ou a cozinha param justamente no horário de pico, quando a casa está cheia e não há margem para improviso.</p>
+        </div>
+        <div class="problem-card reveal">
+          <div class="icon-wrap"><svg class="icon"><use href="#icon-chart"/></svg></div>
+          <h3>Faturamento comprometido</h3>
+          <p>Cada minuto sem gelo é receita que não volta — e clientes que escolhem não voltar na próxima vez.</p>
+        </div>
+        <div class="problem-card reveal">
+          <div class="icon-wrap"><svg class="icon"><use href="#icon-shield"/></svg></div>
+          <h3>Experiência prejudicada</h3>
+          <p>Drinks, vinhos e bebidas servidos fora do padrão afetam diretamente a percepção do seu estabelecimento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement" id="sobre">
+    <div class="container">
+      <div class="statement-inner reveal">
+        <span class="eyebrow">Nossa posição ao seu lado</span>
+        <blockquote>Enquanto você cuida do seu negócio, a Animoos garante que a operação nunca pare por falta de gelo.</blockquote>
+        <p class="statement-support">Não somos uma distribuidora de gelo. Somos a parceira operacional que assume o risco do abastecimento para que sua equipe possa focar no que faz de melhor: atender bem, todos os dias.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section stats-band">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Números que sustentam a confiança</span>
+        <h2>Autoridade construída com consistência, não com promessas.</h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="value"><span data-count="2000" data-suffix="+">0</span></div>
+          <div class="label">Vendas registradas em um único mês</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="value">Referência</div>
+          <div class="label">No segmento de gelo saborizado em Campos do Jordão</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="value">Estoque</div>
+          <div class="label">Dimensionado para picos de alta demanda</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="value">Atendimento</div>
+          <div class="label">Ágil e humanizado, do pedido à entrega</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="diferenciais">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Por que operações confiam na Animoos</span>
+        <h2>Confiabilidade operacional do primeiro ao último pedido.</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="icon-wrap"><svg class="icon"><use href="#icon-truck"/></svg></div>
+          <h3>Entrega rápida e eficiente</h3>
+          <p>Logística organizada para que o gelo chegue no prazo combinado, sem surpresas para a sua operação.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon-wrap"><svg class="icon"><use href="#icon-shield"/></svg></div>
+          <h3>Alto nível de confiabilidade</h3>
+          <p>Previsibilidade em cada pedido — a base para você planejar sua operação sem depender da sorte.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon-wrap"><svg class="icon"><use href="#icon-package"/></svg></div>
+          <h3>Estoque preparado para urgências</h3>
+          <p>Capacidade dimensionada para atender picos de demanda e pedidos de última hora.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon-wrap"><svg class="icon"><use href="#icon-chat"/></svg></div>
+          <h3>Atendimento ágil e humanizado</h3>
+          <p>Um time que entende a rotina de bares, restaurantes e eventos — e responde na velocidade que ela exige.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon-wrap"><svg class="icon"><use href="#icon-snowflake"/></svg></div>
+          <h3>Padrão de qualidade constante</h3>
+          <p>Gelo tradicional e saborizado com regularidade garantida, pedido após pedido.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="icon-wrap"><svg class="icon"><use href="#icon-scale"/></svg></div>
+          <h3>Capacidade para grandes operações</h3>
+          <p>Estrutura preparada para abastecer clientes recorrentes e eventos de grande porte com a mesma consistência.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="solucoes" style="background:var(--color-surface); border-top:1px solid var(--color-border); border-bottom:1px solid var(--color-border)">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Soluções, não apenas produtos</span>
+        <h2>Gelo pensado para cada momento da sua operação.</h2>
+      </div>
+      <div class="products-grid">
+        <div class="product-card reveal">
+          <span class="badge">Gelo Tradicional</span>
+          <h3>Padrão constante para o dia a dia da operação</h3>
+          <p>Qualidade regular para bebidas, drinks e consumo direto — do balcão ao salão, sem variação perceptível entre um pedido e outro.</p>
+          <ul>
+            <li><svg class="icon"><use href="#icon-check"/></svg> Abastecimento contínuo e recorrente</li>
+            <li><svg class="icon"><use href="#icon-check"/></svg> Adequado para grande volume de consumo</li>
+          </ul>
+          <a href="#contato" class="btn btn-outline">Consultar disponibilidade</a>
+        </div>
+        <div class="product-card featured reveal">
+          <span class="badge">Gelo Saborizado</span>
+          <h3>Diferencial para coquetelaria e experiências autorais</h3>
+          <p>O mesmo compromisso de regularidade e qualidade, com um diferencial que eleva a percepção do seu cardápio.</p>
+          <ul>
+            <li><svg class="icon"><use href="#icon-check"/></svg> Referência no segmento em Campos do Jordão</li>
+            <li><svg class="icon"><use href="#icon-check"/></svg> Ideal para bares, adegas e eventos autorais</li>
+          </ul>
+          <a href="#contato" class="btn btn-primary">Consultar disponibilidade</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Uma operação logística pensada para não falhar.</h2>
+      </div>
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <h3>Pedido</h3>
+          <p>Você faz a solicitação pelo canal que preferir — WhatsApp ou formulário.</p>
+        </div>
+        <div class="process-step reveal">
+          <h3>Confirmação ágil</h3>
+          <p>Nosso time confirma prazo e quantidade rapidamente, sem burocracia.</p>
+        </div>
+        <div class="process-step reveal">
+          <h3>Entrega no prazo</h3>
+          <p>Logística organizada para cumprir o horário combinado, mesmo em picos de demanda.</p>
+        </div>
+        <div class="process-step reveal">
+          <h3>Operação garantida</h3>
+          <p>Sua equipe segue atendendo sem interrupção — esse é o resultado que entregamos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section" id="contato">
+    <div class="container cta-grid">
+      <div class="reveal">
+        <span class="eyebrow">Vamos manter sua operação sempre pronta</span>
+        <h2>Fale com a Animoos e garanta que o gelo nunca será o motivo de um problema.</h2>
+        <p class="lede">Conte um pouco sobre o seu estabelecimento e retornamos com agilidade para entender sua demanda e apresentar a melhor forma de atendê-la.</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/5512999999999?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento%20de%20gelo%20para%20meu%20estabelecimento."
+             target="_blank" rel="noopener" class="btn btn-primary" style="background:#fff; color:var(--color-primary); box-shadow:none">
+            <svg class="icon" style="width:18px;height:18px"><use href="#icon-whatsapp"/></svg>
+            Falar agora no WhatsApp
+          </a>
+          <a href="tel:+5512999999999" class="btn btn-outline on-dark">
+            <svg class="icon" style="width:18px;height:18px"><use href="#icon-phone"/></svg>
+            (12) 99999-9999
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row two">
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="estabelecimento">Estabelecimento</label>
+            <input type="text" id="estabelecimento" name="estabelecimento" required autocomplete="organization" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="tipo">Tipo de negócio</label>
+          <select id="tipo" name="tipo">
+            <option>Bar</option>
+            <option>Restaurante</option>
+            <option>Adega</option>
+            <option>Hotel</option>
+            <option>Buffet / Casa de eventos</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="telefone">WhatsApp</label>
+          <input type="tel" id="telefone" name="telefone" required autocomplete="tel" placeholder="(12) 90000-0000" />
+        </div>
+        <div class="field">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="3" placeholder="Conte um pouco sobre sua demanda de gelo"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; background:#fff; color:var(--color-primary); box-shadow:none">Enviar e continuar no WhatsApp</button>
+        <p class="form-note">Ao enviar, abrimos o WhatsApp com sua mensagem pronta para nosso time responder com agilidade.</p>
+        <p class="form-success" id="formSuccess">Mensagem pronta! Continue no WhatsApp que abriu em uma nova aba.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="brand">
+        <span class="brand-mark"><svg class="icon" style="stroke:#fff"><use href="#icon-snowflake"/></svg></span>
+        ANIMOOS
+      </a>
+      <p>Gelo tradicional e saborizado para operações que não podem parar. Parceira operacional de bares, restaurantes, adegas, hotéis e eventos em Campos do Jordão-SP.</p>
+      <div class="social-row">
+        <a href="#" target="_blank" rel="noopener" aria-label="Instagram da Animoos"><svg class="icon" style="width:18px;height:18px"><use href="#icon-instagram"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#solucoes">Soluções</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Soluções</h4>
+      <ul>
+        <li><a href="#solucoes">Gelo tradicional</a></li>
+        <li><a href="#solucoes">Gelo saborizado</a></li>
+        <li><a href="#contato">Solicitar orçamento</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><svg class="icon"><use href="#icon-phone"/></svg> (12) 99999-9999</li>
+        <li><svg class="icon"><use href="#icon-mail"/></svg> contato@animoos.com.br</li>
+        <li><svg class="icon"><use href="#icon-map-pin"/></svg> Campos do Jordão-SP</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; <span id="year"></span> Animoos. Todos os direitos reservados.</span>
+    <span>Continuidade operacional para o seu negócio.</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5512999999999?text=Ol%C3%A1%2C%20quero%20falar%20com%20a%20Animoos." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg class="icon"><use href="#icon-whatsapp"/></svg>
+</a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
